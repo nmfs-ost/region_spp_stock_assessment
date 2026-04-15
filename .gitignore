@@ -2,6 +2,12 @@
 .Rhistory
 .Rapp.history
 
+# Data for confidentiality
+data/
+
+# ignore any analyst specific files
+uncommitted/
+
 # Session Data files
 .RData
 .RDataTmp
