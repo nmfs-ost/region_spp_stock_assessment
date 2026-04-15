@@ -4,6 +4,7 @@
 
 # Data for confidentiality
 data/
+!data/README.md
 
 # ignore any analyst specific files
 uncommitted/
