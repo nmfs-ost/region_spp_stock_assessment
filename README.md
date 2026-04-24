@@ -10,9 +10,15 @@ By maintaining the folder structure and files pushed across assessments, this
 process will reduce the barrier to onboarding for new stock assessment scientists
 and encourage collaboration within the agency through a familiar process.
 
+**[Template for 1-pager in repo here?]**
+
 # How-to-Use
 
+Please rename the repository according to the convention "[region]_[species]_stock_assessment""
+
 ## Repository Content
+
+### Folder Structure
 
 This repository is structured to house different content necessary to execute a 
 stock assessment workflow from start to finish. Each folder contains an individual 
@@ -22,6 +28,16 @@ This repository should NOT contain every part of your process; however, it
 should contain the minimum necessary scripts, information, and shareable data 
 to replicate your workflow for either future you or another stock assessment 
 scientist.
+
+Feel free to add notes and use the folder README as a place to document useful
+information.
+
+
+
+The folder names in this repository loosely follow that found in an R package. 
+This is helpful in that users can easily load all functions found in the R 
+folder along with data in the data folder with one easy call: `devtools::load_all()`.
+
 
 ## Versioning
 
