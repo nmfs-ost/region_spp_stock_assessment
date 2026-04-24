@@ -1,5 +1,5 @@
 # region_spp_stock_assessment
-Template repository to organize and standardize files created in the stock assessment workflow.
+Template repository to organize and standardize files created in a stock assessment workflow.
 
 "Before using this repository please follow these instructions here"
 
