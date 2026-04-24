@@ -4,6 +4,9 @@ Template repository to organize and standardize files created in a stock
 assessment workflow. This repository is made to be copied using the 
 "template" button found in the top right-hand corner of the homepage.
 
+<img width="216" height="58" alt="image" src="https://github.com/user-attachments/assets/578fd630-c396-4137-a521-812baaa1ac19" />
+
+
 # How-to-Use
 
 Each folder is structured to house different content necessary to execute a 
