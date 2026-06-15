@@ -93,6 +93,66 @@ Tagging using the command line is much simpler than in the GitHub UI.
 
  - https://git-scm.com/book/en/v2/Git-Basics-Tagging
 
+# Connecting to Google Workstation
+
+This repository template was created with intention. This can be linked to a 
+Google Workstation so users have a way to organize and store files and data created 
+during the stock assessment process. NOAA has begun to provide access and trainings
+for Google Workstations to work in the cloud. This provides a new opportunity to 
+migrate workflows into the cloud following suite of data.
+
+In order to connect the repository to a Google workstation after copying this 
+template to your own user, follow the following directions:
+
+## Option 1: Rstudio
+
+Navigate to New project > version control > Repository URL
+
+## Option 2: Using the R console
+
+```
+# R code to connect github to a Google Cloud Workstation
+# Author: Alexandra Norelli
+
+# Go to Github and generate a Personal Access Token (PAT) with the permissions 
+# you need:  
+# https://github.com/settings/tokens
+# Github tutorial here: 
+# https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+# Github Governaance Team Video tutorial here:  
+# https://drive.google.com/file/d/1tbbw_xXARK689Zj5tm4lVo18aBaXhdKX/view?t=4
+
+# ctrl+f and replace USER_NAME with your username
+# ctrl+f and replace E_MAIL with your email address
+# ctrl+f and replace TOKEN with your PAT Token
+
+system('git config --global user.name "USER_NAME"')
+system('git config --global user.email "E_MAIL"')
+system("git config --list")  #check that the info is correct
+
+cred_line <- "https://USER_NAME:TOKEN@github.com"
+writeLines(cred_line, "~/.git-credentials")
+system('git config --global credential.helper store')
+```
+
+## Option 3: Using command line
+
+Follow the same as above, but don't use the R support functions.
+- Go to Github and generate a Personal Access Token (PAT) with the permissions 
+you need:  
+--> https://github.com/settings/tokens
+
+* ctrl+f and replace USER_NAME with your username
+* ctrl+f and replace E_MAIL with your email address
+* ctrl+f and replace TOKEN with your PAT Token
+
+```
+git config --global user.name "USER_NAME"
+git config --global user.email "E_MAIL"
+git config --list
+git config --global https://USER_NAME:TOKEN@github.com store
+```
+
 # Warnings
 
  - Please house information associated with file permissions like passwords and 
